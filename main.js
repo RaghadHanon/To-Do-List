@@ -26,9 +26,7 @@ function add(task) {
 
   const listItem = document.createElement('li');
   listItem.classList.add('item');
-
   listItem.appendChild(checkDiv);
-
   listItem.innerHTML += `
       <i class="delete fa-solid fa-minus" style="color: #e09996;"></i>
   `;
@@ -48,12 +46,10 @@ function add(task) {
   });
 
 }
-
 function taskDone(e){
   e.preventDefault();
   e.target.nextElementSibling.classList.toggle("done");
 };
-  
 function deleteTask(e){
     e.preventDefault();
     console.log(  e.target);
